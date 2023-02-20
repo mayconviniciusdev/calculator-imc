@@ -1,0 +1,20 @@
+@import 'global.scss';
+
+.content 
+{
+    p 
+    {margin: 0 2%;
+    color: #536D88;
+    max-width: 600px;
+    padding: 15px 0;
+    font-size: 14px;}
+
+    a {text-decoration: none; text-align: center;}
+
+    .btn p 
+    {background-color: #27749a;
+    color: #F6F6F6;
+    font-weight: bold;
+    width: 30%;
+    border-radius: 15px;}
+}

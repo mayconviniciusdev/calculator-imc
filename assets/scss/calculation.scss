@@ -1,0 +1,50 @@
+@import 'global.scss';
+
+.imc 
+{
+    .back 
+    {font-size: 12px; 
+    text-decoration: none;
+    margin-bottom: 8%;
+    color: #4C4C4C;
+    display: inline-block;}
+
+    h2 {font-size: 20px; color: #536D88;}
+
+    p
+    {font-size: 14px;
+    color: #536D88;
+    font-weight: 300;
+    margin: 25px 0 10px 0;}
+
+    input
+    {border-radius: 12px;
+    border: 1px solid #27749a;
+    height: 40px;
+    background-color: transparent;
+        &[type=number] 
+        {outline: none;
+        display: block;
+        padding: 0 15px;
+        font-size: 14px;
+        color: #27749a;
+        font-weight: 400;}
+    }
+    
+    button
+    {background-color: #27749a;
+    cursor: pointer;
+    padding: 10px;
+    color: #F6F6F6;
+    font-weight: bold;    
+    line-height: 25px;
+    border: 0;
+    border-radius: 15px;}
+
+    #resultado 
+    {color: #536D88;
+    font-size: 14px;
+    margin-top: 15px;}
+} 
+
+
