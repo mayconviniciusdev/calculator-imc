@@ -1,50 +1,77 @@
 @import 'global.scss';
 
-.imc 
-{
-    .back 
-    {font-size: 12px; 
-    text-decoration: none;
-    margin-bottom: 8%;
-    color: #4C4C4C;
-    display: inline-block;}
+.content
+{max-width: 550px;
+margin: 5%;
 
-    h2 {font-size: 20px; color: #536D88;}
+    a, p {font-size: 14px;}
+    .text 
+    {color: #013750;
+        
+        .back 
+        {text-decoration: none;
+        margin-bottom: 3%;
+        color: #013750 !important;
+        display: inline-block;}
 
-    p
-    {font-size: 14px;
-    color: #536D88;
-    font-weight: 300;
-    margin: 25px 0 10px 0;}
-
-    input
-    {border-radius: 12px;
-    border: 1px solid #27749a;
-    height: 40px;
-    background-color: transparent;
-        &[type=number] 
-        {outline: none;
-        display: block;
-        padding: 0 15px;
-        font-size: 14px;
-        color: #27749a;
-        font-weight: 400;}
+        p {margin-top: 10px;}
+        table 
+        {-webkit-box-shadow: 0px 0px 20px 10px rgba(83,109,136,1);
+        -moz-box-shadow: 0px 0px 20px 10px rgba(83,109,136,1);
+        box-shadow: 0px 0px 20px 10px rgba(83,109,136,1);
+        width: 100%;
+        margin: 35px 0;
+            th, td {padding: 10px; font-weight: bold;}
+            thead {background-color: #013750; color: #F6F6F6; font-size: 18px}
+            tbody tr:nth-child(even) {background-color: #536D88; color: #F6F6F6;}
+        }
     }
+
+    .calc 
+    {color: #27749a;
+    padding-top: 60px;
+    display: grid;
+    justify-content: center;
     
-    button
-    {background-color: #27749a;
-    cursor: pointer;
-    padding: 10px;
-    color: #F6F6F6;
-    font-weight: bold;    
-    line-height: 25px;
-    border: 0;
-    border-radius: 15px;}
+        p {margin-top: 5px; color: #013750;}
+        form 
+        {
+            p {margin-top: 30px;}
+            input
+            {border-radius: 10px;
+            width: 100%;
+            margin-top: 10px;
+            height: 40px;
+            border: 1px solid #27749a;
+            background-color: transparent;
+                &[type=number] 
+                {outline: none;
+                display: block;
+                padding: 0 15px;
+                color: #013750;
+                font-weight: 400;
+                    &::-webkit-input-placeholder {color: #013750;}
+                }
+            }        
+        } 
 
-    #resultado 
-    {color: #536D88;
-    font-size: 14px;
-    margin-top: 15px;}
-} 
+        button 
+        {background-color: #013750;
+        cursor: pointer;
+        padding: 15px;
+        color: #F6F6F6;
+        width: 100%;
+        font-weight: bold;    
+        line-height: 25px;
+        border: 0;
+        border-radius: 15px;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(83,109,136,1);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(83,109,136,1);
+        box-shadow: 10px 10px 5px 0px rgba(83,109,136,1);}
 
+        #resultado 
+        {color: #013750;
+        margin-top: 10px;}
+    }
 
+}

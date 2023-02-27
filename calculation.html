@@ -12,20 +12,82 @@
     </head>
 
     <body>
-        <div class="imc">
-            <a class="back" href="index.html"><i class="fa-solid fa-chevron-left"></i> VOLTAR</a>
-            <h2>PREENCHA SUAS</h2>
-            <h2>INFORMAÇÕES ABAIXO:</h2>
+        <div class="content">
+            <div class="text">
+                <a class="back" href="index.html"><i class="fa-solid fa-chevron-left"></i> VOLTAR PARA O ÍNICIO</a>
+                <h2>COMO INTERPRETAR O RESULTADO DO IMC?</h2>
+                <p>O resultado do IMC, deve ser interpretado utilizando a seguinte tabela:</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ÍNDICE MASSA CORPORAL (kg/m<sup>2</sup>)</th>
+                            <th>CLASSIFICAÇÃO</th>
+                        </tr>
+                    </thead>
 
-            <p>Sua altura (exemplo: 1,68)</p>
-            <input type="number" name="altura" id="altura" placeholder="00.0 m">
+                    <tbody>
+                        <tr>
+                            <td>ENTRE 16 - 16.9</td>
+                            <td>MAGREZA</td>
+                        </tr>
 
-            <p>Seu peso (exemplo: 72)</p>
-            <input type="number" name="peso" id="peso" placeholder="00.0 kg"><br>
-        
-            <button>CALCULAR IMC <i class="fa-solid fa-chevron-right"></i></button><br>
-            <div id="resultado"></div>
-        </div><!-- imc -->
+                        <tr>
+                            <td>ENTRE 17 - 18.4</td>
+                            <td>PESO BAIXO</td>
+                        </tr>
+
+                        <tr>
+                            <td>ENTRE 18.5 - 24.9</td>
+                            <td>PESO NORMAL</td>
+                        </tr>
+
+                        <tr>
+                            <td>ENTRE 25 - 29.9</td>
+                            <td>SOBREPESO</td>
+                        </tr>
+
+                        <tr>
+                            <td>ENTRE 30 - 34.9</td>
+                            <td>OBESIDADE GRAU I</td>
+                        </tr>
+
+                        <tr>
+                            <td>ENTRE 35 - 39.9</td>
+                            <td>OBESIDADE GRAU II</td>
+                        </tr>
+
+                        <tr>
+                            <td>MAIOR QUE 40</td>
+                            <td>OBESIDADE GRAU III</td> 
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>É interessante que o resultado do IMC seja interpretado com um nutricionista, que poderá indicar uma dieta de acordo com seus objetivos e histórico de saúde.</p>
+                <p>Embora o IMC seja uma boa ferramenta para entender se seu peso está ou não adequado, o mesmo não é a melhor forma de avaliação. O ideal é consultar um nutricionista para avaliar seu IMC juntamente com outros fatores.</p>
+            </div><!-- text -->
+            
+            <div class="calc">
+                <h2>CALCULANDO SEU IMC</h2>
+                <p>Insire seus dados abaixo:</p>
+                <form>
+                    <p>Sua altura (exemplo: 1,68)</p>
+                    <input type="number" name="altura" id="altura" placeholder="00.0 m">
+
+                    <p>Seu peso (exemplo: 72)</p>
+                    <input type="number" name="peso" id="peso" placeholder="00.0 kg"><br>
+                </form>
+
+                <button>CALCULAR IMC <i class="fa-solid fa-chevron-right"></i></button><br>
+                <div id="resultado"></div>
+            </div><!-- calc -->
+
+            <footer>
+                <ul><a href="#"><i class="fas fa-long-arrow-alt-up"></i>IR PARA O TOPO</a></ul>
+                <p>DESENVOLVIDO POR: MAYCON VINÍCIUS<br><span>contato@mayconviniciusdev.com</span></p>
+            </footer>
+        </div><!-- content -->
     
         <script src="assets/js/jquery360min.js"></script>
         <script src="assets/js/scripts.js"></script>

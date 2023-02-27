@@ -1,20 +1,24 @@
 @import 'global.scss';
 
 .content 
-{
-    p 
-    {margin: 0 2%;
-    color: #536D88;
-    max-width: 600px;
-    padding: 15px 0;
-    font-size: 14px;}
+{max-width: 420px;
+margin: 5%;
+display: grid;
+justify-items: center;
 
-    a {text-decoration: none; text-align: center;}
+    h1 {color: #27749A; font-size: 32px;}
+    p {padding: 20px 0; color: #013750; font-size: 14px;}
+    a {text-decoration: none;}
 
     .btn p 
-    {background-color: #27749a;
+    {background-color: #27749A;
     color: #F6F6F6;
     font-weight: bold;
-    width: 30%;
-    border-radius: 15px;}
+    line-height: 25px;
+    padding: 15px 100px;
+    text-align: center;
+    border-radius: 15px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(83,109,136,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(83,109,136,1);
+    box-shadow: 10px 10px 5px 0px rgba(83,109,136,1);}
 }

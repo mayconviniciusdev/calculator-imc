@@ -10,4 +10,15 @@ body
 justify-content: center;
 align-items: center;
 min-height: 100vh;
-background: linear-gradient(350deg, #27749a, #F6F6F6);}
+background: linear-gradient(360deg, #27749a, #F6F6F6);}
+
+footer 
+{text-align: center;
+color: #004369;
+    ul 
+    {list-style-type: none;
+        a {color: #013750; text-decoration: none;}
+        i {font-size: 15px; margin: 0px 10px; color: #013750;} }
+
+    p {margin: 15px 0; font-size: 14px;}
+}
